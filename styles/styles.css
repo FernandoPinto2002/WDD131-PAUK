@@ -1,0 +1,21 @@
+body {
+    color: red;
+    font-size: 14px;
+}
+
+main {
+
+    margin: auto;
+    background-color: blueviolet;
+     height: 100vh; /*view port height */
+}
+
+.green {
+
+    color: green;
+}
+
+footer p {
+
+    font-size: .8em;
+}
