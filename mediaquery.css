@@ -5,18 +5,32 @@ body {
   header, main, footer {
     max-width: 640px;
     margin: 1rem auto;
-    border: 1px solid #bbb;
+    border: 1px solid #385170;
     padding: 1rem;
-    background-color: #e6f2ff;
+    background-color: #9fd3c7;
   }
   
   main {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
+    
   }
   
   section {
     padding: 1rem;
     background-color: #fff;
   }
+
+  @media screen and (min-width: 500px){
+
+  header {
+
+      background-color: black;
+      color: white;
+  }
+
+  main {
+    grid-template-columns:1fr 1fr;
+  }
+}
