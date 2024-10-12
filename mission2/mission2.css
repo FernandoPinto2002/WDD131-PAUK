@@ -1,0 +1,85 @@
+* {
+
+    margin: 0 auto;
+}
+
+body {
+
+   
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.5em;
+}
+
+select{
+
+    display: block;
+    margin: auto;
+    
+} 
+main {
+
+    padding: 20px
+}
+
+
+.title {
+
+    display: grid;
+    place-items: center;
+    letter-spacing: 3px;
+
+}
+
+.title h1 {
+
+    font-size: 2.5em;
+}
+h2 {
+    color:#006EB6;
+    font-size:20px;
+    padding: 30px;
+
+}
+
+.content {
+    margin: 20px auto;
+    width: 600px;
+    border: 1px solid black;
+    padding: 30px;
+    
+}
+
+img{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+      
+    
+}
+
+.does-list {
+
+
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+.dark {
+
+    background-color: gray;
+    color: white;
+
+}
+
+.dark h2{
+
+    color: #006EB6;
+}
+
+.dark .logo {
+
+    content: url('images2/white.png');
+}

@@ -1,3 +1,3 @@
-const newImage = document.createElement("img");
-newImage.src = "https://picusm.photos/200/300";
-document.body.append(newImage);
+const newSection = document.createElement("section");
+newSection.innerHTML = "<h2> DOM basics </h2> <p>This was added through Javascript</p>";
+document.body.appendChild(newSection);  

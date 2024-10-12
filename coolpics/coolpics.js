@@ -7,7 +7,7 @@ function toggleMenu() {
     
     if (!menu.classList.contains("hide")) {
         const navItems = document.querySelectorAll("nav li");
-        navItems.forEach(item => item.style.display = "block");
+        navItems.forEach(item => item.style.display = "inline");
     } else {
        
         const navItems = document.querySelectorAll("nav li");
@@ -21,18 +21,23 @@ function handleResize() {
     const menu = document.querySelector(".menu");
     const navItems = document.querySelectorAll("nav li");
     
-    if (window.innerWidth > 1000) {
+    if (window.innerWidth >= 1000) {
         menu.classList.remove("hide");
-        navItems.forEach(item => item.style.display = "block");
-    } else if (window.innerWidth > 500 && window.innerWidth <= 750) {
+        navItems.forEach(item => item.style.display = "inline");
+        menuButton.style.display = "none";
+    } else if (window.innerWidth  >= 750) {
         menu.classList.add("hide");
-        navItems.forEach(item => item.style.display = "none");
-    } else {
-        menu.classList.add("hide");
+        navItems.forEach(item => item.style.display = "inline");
+        menuButton.style.display = "inline";
+    }
+     else {
+        menu.classList.remove("hide");
         navItems.forEach(item => {
-            item.style.display = "block"; 
-            item.style.display = "flex";
-        });
+            
+            item.style.display = "block";
+            // menuButton.style.display = "none";
+        })
+        
     }
 }
 
