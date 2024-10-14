@@ -1,170 +1,144 @@
 @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
 }
 
-
-h1, h2 {
-    font-family: 'Mooli', cursive;
+h1,
+h2 {
+  font-family: "Mooli", cursive;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
 }
 
-header, footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px;
+header,
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
 
 nav {
-    display: block; 
-    justify-content: center; 
-    justify-content: space-between;
-    background-color: #333; 
+  display: block;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: #333;
 }
 .menu {
-    text-align: center;
+  text-align: center;
 }
 .menu ul {
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-
 nav .menu li {
-    list-style: none; 
-    padding: 0 15px; 
+  list-style: none;
+  padding: 0 15px;
 }
 
 nav .menu a {
-    color: white; 
-    text-decoration: none; 
+  color: white;
+  text-decoration: none;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 5px 0;
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
 }
 
 button.menu {
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.menu li {
+  margin: 5px 0;
+  width: 100%;
 }
 
 .gallery figure {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .gallery img {
-    max-width: 100%;
-    height:400px;
-    width: 400px;
-    object-fit: cover;
+  max-width: 100%;
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
 }
 
 footer {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .viewer {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.75);
-    display: grid;
-    justify-items: center; 
-    align-items: center;
-    z-index: 10; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  z-index: 10;
 }
 .close-viewer {
-    color: white; 
-    background: none; 
-    border: none; 
-    font-size: 24px; 
-    cursor: pointer;
-    position: absolute; 
-    top: 20px; 
-    right: 20px; 
+  color: white;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 .viewer img {
-    max-height: 100%; 
-    max-width: 90%;
+  max-height: 100%;
+  max-width: 90%;
 }
 .hide {
-    display:none;
+  display: none;
 }
-@media (min-width > 500px) {
 
-    .gallery {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    
-    .menu {
-        flex-direction: column; 
-        width: 100%; 
-    }
-
-    .menu li {
-        margin: 5px 0; 
-        width: 100%; 
-
-}
-@media (min-width: 500px) and (max-width: 750px) {
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* nav {
-        display:flex;
-
-    } */
+@media (min-width: 750px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1000px) {
-
-
-
-
-    .gallery {
-        display: grid; 
-        grid-template-columns: repeat(3, 1fr); 
-        grid-template-rows: repeat(3, 1fr); 
-        gap: 10px; 
-    }
-    .viewer {
-        max-width: 800px; 
-        max-height: 80%;
-        margin: auto; 
-    }
-
-    
-
-}}
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .viewer {
+    max-width: 800px;
+    max-height: 80%;
+    margin: auto;
+  }
+}
