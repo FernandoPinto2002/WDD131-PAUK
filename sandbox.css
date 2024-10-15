@@ -1,0 +1,7 @@
+.hidden {
+    display: none;
+}
+
+#menu[aria-expanded="true"] {
+    display: block;
+}
