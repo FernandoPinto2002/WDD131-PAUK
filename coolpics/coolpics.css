@@ -71,7 +71,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
 }
-
+/* this is the main change */
 .menu li {
   margin: 5px 0;
   width: 100%;
