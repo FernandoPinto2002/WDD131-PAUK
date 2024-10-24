@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Card Form</title>
+  <link rel="stylesheet" href="card.css">
+  <script src="card.js" defer></script>
+  
+</head>
+<body>
+  <form id="form-container">
+    <div id="card-front">
+      <div id="image-container">
+        <span id="amount">Paying: <strong>$99</strong></span>
+        <span id="card-image"></span>
+      </div>
+  
+      <label for="card-number">Card Number</label>
+      <input type="text" id="card-number" name="cardNumber" placeholder="1234 5678 9101 1112" maxlength="16" required>
+      <p class="errorMsg"></p>
+  
+      <!-- Container for aligning cardholder and expiration date -->
+      <div id="cardholder-exp-container">
+        <div id="cardholder-container">
+          <label for="card-holder">Card Holder</label>
+          <input type="text" id="card-holder" placeholder="e.g. John Doe" required>
+        </div>
+  
+        <div id="exp-container">
+          <label for="card-exp">Expiration</label>
+          <div id="exp-inputs">
+            <input id="card-month" type="text" placeholder="MM" maxlength="2" required>
+            <input id="card-year" type="text" placeholder="YY" maxlength="2" required>
+          </div>
+        </div>
+      </div>
+      
+      <p class="errorMsg2"></p>
+    </div>
+  
+    <div id="card-back">
+      <div id="cvc-container">
+        <label for="card-cvc">CVC/CVV</label>
+        <input id="card-cvc" placeholder="XXX" type="text" maxlength="4" required>
+      </div>
+      <div id="card-stripe"></div>
+    </div>
+  
+    <input type="submit" id="card-btn" value="Submit">
+  </form>
+</body>
+</html>

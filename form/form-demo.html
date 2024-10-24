@@ -1,0 +1,46 @@
+<!-- form-demo.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="form-demo.css" />
+    <script src="form-demo.js" defer></script>
+  </head>
+  <body>
+    <header><h1>Checkout</h1></header>
+
+    <main>
+        <div class="form-container">
+    
+      <form id="checkoutForm" action="completed.html">
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="lname"><br>
+
+        <label for="payment-method">Choose a payment method:</label>
+        <select id="payment-method" name="payment-method">
+        <option value="credit-card">Credit Card</option>
+        <option value="debit-card">Debit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="bank-transfer">Bank Transfer</option>
+        <option value="crypto">Cryptocurrency</option>
+        </select>
+
+         <input type="submit" value="Submit"><br>
+         <div id="credit-card-input" class="hide">
+            <label for="cnumber">Credit Card Number:</label><br />
+            <input type="text" id="ccn" name="ccn" pattern="[0-9]{16}" title="Credit card number must contain exactly 9 digits"><br />
+          </div>
+
+          <div id="paypal-input" class="hide">
+            <label for="pname">PayPal Username:</label><br />
+            <input type="text" id="pname" name="pname"><br />
+          </div>
+      </form>
+    </div>
+    </main>
+  </body>
+</html>

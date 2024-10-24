@@ -1,7 +1,45 @@
-.hidden {
-    display: none;
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+  width: 300px;
+  height: 180px;
 }
 
-#menu[aria-expanded="true"] {
-    display: block;
+.card-front,
+.card-back {
+  grid-column: 1 / 2; /* Both front and back are in the same grid area */
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-front {
+  z-index: 2;
+  background-color: #2b3e50; /* Front card background */
+}
+
+.card-back {
+  z-index: 1;
+  background-color: #3d4f61;
+  transform: translateX(60px) translateY(60px); 
+}
+
+.card-number,
+.card-name,
+.card-expiration {
+  color: white;
+}
+
+.card-cvc {
+  color: white;
+  text-align: right;
 }
