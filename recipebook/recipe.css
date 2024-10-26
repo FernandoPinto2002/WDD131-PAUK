@@ -68,6 +68,11 @@ input {
   width: 20rem;
 }
 
+label {
+
+  display: none;
+}
+
 /* Breakpoint at 960px */
 @media (min-width: 960px) {
   main {

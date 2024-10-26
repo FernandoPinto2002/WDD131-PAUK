@@ -5,6 +5,7 @@ const recipes = [
     isBasedOn: "",
     cookTime: "30 Min",
     datePublished: "2016-10-16",
+	alt: "waffle sitting on a plate with salad",
     tags: ["Waffles", "Sweet Potato", "Side"],
     description: "Savory waffles made with Sweet potato with a hint of Ginger",
     image: "images1/images/sweet-potato-waffle-md.jpg",
@@ -40,6 +41,7 @@ const recipes = [
     isBasedOn: "",
     cookTime: "20 min",
     datePublished: "",
+	alt: "chicken breast with curry sauce",
     tags: ["Chicken", "Entree"],
     description:
       "Delicious quick and easy creamy rice dish. The mustard, mushrooms, and lemon all blend together wonderfully",
@@ -72,6 +74,7 @@ const recipes = [
     isBasedOn: "",
     cookTime: "30 min",
     datePublished: "2018-09-19",
+	alt: "potatoes in a pan",
     tags: ["Potatoes", "side"],
     description:
       "Easy and delicious oven roasted potatoes that go great with almost anything.",
@@ -106,6 +109,7 @@ const recipes = [
     description:
       "Black beans and tomatoes served over a bed of rice. Top with cheese and scoop up with tortilla chips for maximum enjoyment.",
     image: "images1/images/black-beans-and-rice.jpg",
+	alt: "black with rice and beans and onions dressing",
     recipeIngredient: [
       "1 Medium Onion, diced",
       "2 Cloves Garlic, minced",
@@ -139,6 +143,7 @@ const recipes = [
     description:
       "Quick and easy Chicken curry recipe made with easy to find ingredients.",
     image: "images1/images/chicken-curry.webp",
+	alt: "Chicken curry with a sauce",
     recipeIngredient: [
       "4 Slices Bacon",
       "1 clove Garlic",
@@ -173,6 +178,7 @@ const recipes = [
     isBasedOn: "",
     cookTime: "11 min",
     datePublished: "2018-09-19",
+	alt: "Cookie with coconut and chip cookies",
     tags: ["dessert"],
     description: "Delicious soft chocolate chip cookies with coconut.",
     image: "images1/images/chocolate-chip-cookies.jpg",
@@ -211,6 +217,7 @@ const recipes = [
     description:
       "This gooseberry cake with crumble is easy to follow, a bit tart and not too sweet. Made up of a cake base, filled with fresh gooseberries and vanilla cream and finished off with crumble that's flavored with vanilla. A must have recipe for gooseberry lovers!!",
     image: "images1/images/german-gooseberry-cake.jpg",
+	alt: "cake with spoon showing on a plate",
     recipeIngredient: [
       "For the Cake Base:",
       "180 g (1 ½ cups/ 6.3 oz) plain flour",
@@ -254,6 +261,7 @@ const recipes = [
     description:
       "This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.",
     image: "images1/images//apple-crisp.jpg",
+	alt: "apple crisp dessert with cookie crumbles on the top",
     recipeIngredient: [
       "10 C apples, cored and sliced",
       "1 C white sugar",
@@ -296,7 +304,7 @@ function init() {
 
 function recipeTemplate(recipe) {
   return `<figure class="recipe">
-	<img src="${recipe.image}" alt="" />
+	<img src="${recipe.image}" alt="${recipe.alt}" />
 	<figcaption>
 		<ul class="recipe__tags">
 			${tagsTemplate(recipe.tags)}
