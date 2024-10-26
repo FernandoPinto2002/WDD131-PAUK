@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="recipe.css" />
+    <script src="recipe.js" defer></script>
+    <meta property="og:title" content="RecipeBook" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="RecipeBook for Beginners" />
+    <meta property="og:image" content="URL to an image" />
+    <meta name="twitter:title" content="Delicious Recipes Collection" />
+    <meta
+      name="twitter:description"
+      content="A collection of mouthwatering recipes for every occasion. Explore easy-to-follow instructions and cooking tips."
+    />
   </head>
   <body>
     <header>
@@ -14,47 +24,15 @@
 
     <main>
       <form>
-        <input type="text" />
-        <button>search</button>
+        <input type="text" id="search-input" />
+        <button id="search-btn">Search</button>
       </form>
-      <!-- <article class="article-insertion"> -->
-
-      <figure class="recipe">
-        <img
-          src="images1/images/apple-crisp.jpg"
-          alt="image of apple crisp on a plate"
-        />
-        <figcaption>
-          <ul class="recipe__tags">
-            <li>Dessert</li>
-            <li>Fruit</li>
-          </ul>
-          <h2><a href="#">Apple Crisp</a></h2>
-          <p class="recipe__ratings">
-            <span
-              class="rating"
-              role="img"
-              aria-label="Rating: 3 out of 5 stars"
-            >
-              <span aria-hidden="true" class="icon-star">⭐</span>
-              <span aria-hidden="true" class="icon-star">⭐</span>
-              <span aria-hidden="true" class="icon-star">⭐</span>
-              <span aria-hidden="true" class="icon-star">⭐</span>
-              <span aria-hidden="true" class="icon-star-empty">☆</span>
-            </span>
-          </p>
-          <p class="recipe__description">
-            This apple crisp recipe is a simple yet delicious fall dessert
-            that's great served warm with vanilla ice cream.
-          </p>
-        </figcaption>
-      </figure>
-      <!-- </article> -->
+      <div id="recipe-container"></div>
+      <!-- <recipe> -->
     </main>
 
     <footer>
       <div class="social">
-        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
         <a href="#"
           ><img src="images1/images/instagram_icon.svg" alt="instagram icon"
         /></a>

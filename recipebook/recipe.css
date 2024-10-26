@@ -1,48 +1,125 @@
-
-*{
-
-    font-family: Arial, Helvetica,sans-serif;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 main {
-
-    text-align: center;
+  text-align: center;
 }
 
 footer {
-
-    text-align: center;
+  text-align: center;
 }
 
 .recipe {
-
-    border: 1px solid black;
+  border: 1px solid black;
+}
+img {
+  margin: 20px;
 }
 header img {
-
-    max-width:40%;
+  max-width: 10rem;
+}
+form {
+  display: flex;
+  justify-content: center;
+}
+button {
+  height: 50px;
+  font-size: 14px;
+  background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+  background-color: #fff;
+  border: 1px solid #000;
+  box-shadow: none;
+  height: 2rem;
 }
 
-.recipe__tags li{
-
-    list-style: none;
-    border: 1px solid black;
-    width:auto;
+.recipe__tags li {
+  list-style: none;
+  border: 1px solid black;
+  width: 15%;
+  text-align: center;
 }
 
-img {
-    max-width:60%;
-
+figcaption {
+  text-align: left;
+  padding: 20px;
 }
 
-.social img{
-    max-width: 10%;
-    
+.recipe img {
+  max-width: 20rem;
+}
+
+.social img {
+  max-width: 10%;
+}
+
+input {
+  width: 20rem;
+}
+
+/* Breakpoint at 960px */
+@media (min-width: 960px) {
+  main {
+    display: grid;
+    margin: 0 auto;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    padding: 20px;
+  }
+
+  input {
+    width: 85%;
+    height: 2em;
+  }
+
+  .recipe img {
+    grid-column: 1/2;
+  }
+  .recipe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .recipe img {
+    max-width: 80%;
+  }
+
+  figcaption {
+    width: 60%;
+    text-align: left;
+    display: block;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .social {
+    width: 20%;
+  }
+  footer {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  .recipe__tags {
+    width: 140%;
+  }
 }
