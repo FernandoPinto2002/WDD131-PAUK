@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": " TechMaster Wireless Earbuds",
+    "price": 200,
+    "image": "Images/img1.webp"
+  },
+  {
+    "id": 2,
+    "name": " Recovered IPhone 14",
+    "price": 250,
+    "image": "Images/img2.webp"
+  },
+  {
+    "id": 3,
+    "name": " Gaming Multi-Functional Keyboard",
+    "price": 290,
+    "image": "Images/img3.webp"
+  },
+  {
+    "id": 4,
+    "name": " Set of Speakers",
+    "price": 500,
+    "image": "Images/img4.webp"
+  },
+  {
+    "id": 5,
+    "name": " Gaming PC with NVIDIA XST",
+    "price": 300,
+    "image": "Images/img5.avif"
+  },
+  {
+    "id": 6,
+    "name": " Vitange Camera 1998",
+    "price": 300,
+    "image": "Images/img6.webp"
+  },
+  {
+    "id": 7,
+    "name": " Electronic Frequency 2255",
+    "price": 900,
+    "image": "Images/img7.webp"
+  },
+  {
+    "id": 8,
+    "name": " Retronic CS 458",
+    "price": 100,
+    "image": "Images/img8.webp"
+  }
+]
