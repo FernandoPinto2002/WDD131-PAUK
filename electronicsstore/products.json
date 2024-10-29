@@ -7,33 +7,33 @@
   },
   {
     "id": 2,
-    "name": " Recovered IPhone 14",
+    "name": " Recovered IPhone 14 - 258GB",
     "price": 250,
-    "image": "Images/img2.webp"
+    "image": "Images/image1.jfif"
   },
   {
     "id": 3,
     "name": " Gaming Multi-Functional Keyboard",
     "price": 290,
-    "image": "Images/img3.webp"
+    "image": "Images/image2.jfif"
   },
   {
     "id": 4,
-    "name": " Set of Speakers",
+    "name": " Speaker BEAT 45FJ 500HZ NEON",
     "price": 500,
-    "image": "Images/img4.webp"
+    "image": "Images/image3.jfif"
   },
   {
     "id": 5,
     "name": " Gaming PC with NVIDIA XST",
     "price": 300,
-    "image": "Images/img5.avif"
+    "image": "Images/image4.jfif"
   },
   {
     "id": 6,
     "name": " Vitange Camera 1998",
     "price": 300,
-    "image": "Images/img6.webp"
+    "image": "Images/image5.jfif"
   },
   {
     "id": 7,
@@ -45,6 +45,6 @@
     "id": 8,
     "name": " Retronic CS 458",
     "price": 100,
-    "image": "Images/img8.webp"
+    "image": "Images/image6.jfif"
   }
 ]

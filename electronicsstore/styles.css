@@ -17,6 +17,7 @@
   justify-content: center;
   font-size: 1.5rem;
   padding: 20px;
+  background: linear-gradient(to right, #ead8b1, #001f3f);
 }
 
 a {
@@ -45,12 +46,13 @@ main {
 }
 
 .about-us {
-  grid-column: 1 / 11;
+  grid-column: 3 / 9;
   grid-row: 2 / 3;
   text-align: center;
   margin: 30px 0;
   line-height: 3;
   color: #001f3f;
+
 }
 
 /* Background image spanning entire width */
@@ -67,7 +69,7 @@ main {
 /* Content blocks on top of the background */
 .blocks {
   display: grid;
-  grid-column: 1 / 11;
+  grid-column: 3 / 9;
   grid-row: 3 / 4; /* Ensure content sits on top of the background */
   grid-template-columns: repeat(3, 1fr); /* Three columns, center one empty */
   gap: 20px;
@@ -97,16 +99,42 @@ h2 {
   margin-bottom: 20px;
 }
 
+
+.nav-container a{
+
+  text-decoration: none;
+  color: #f3f3f3;
+  font-size: 1.2rem;
+  padding: 5px 5px; /* Adjust this value to control spacing */
+  margin: 0;
+  color:#ead8b1;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: #f3f3f3;
+  font-size: 1.2rem;
+  padding: 0 10px; /* Adjust this value to control spacing */
+  margin: 0;
+  color:#ead8b1;
+}
 p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin: 0;
 }
 
+.nav-items{
+
+  display: flex; 
+	justify-items: space-between; 
+}
+
 /* Logo */
 .logo {
-  width: 5%;
+  width: 7%;
   height: auto;
+  margin-left:20px;
 }
 
 .why-us {
@@ -117,7 +145,7 @@ p {
 /* Background image2 with top text, image, and bottom text */
 .background-image2 {
   background-color: #001f3f; /* Blue background */
-  grid-column: 2 / 10;
+  grid-column: 3 / 9;
   grid-row: 9 / 14;
   width: 100%;
   padding: 40px;
@@ -216,7 +244,8 @@ svg {
 }
 .listProduct .item img {
   width: 90%;
-  filter: drop-shadow(0 50px 20px #0009);
+  filter: drop-shadow(0 5px 5px #0009);
+  margin-bottom: 50px;
 }
 .listProduct {
   display: grid;
@@ -224,20 +253,22 @@ svg {
   gap: 20px;
   margin-bottom: 40px;
   width: 60%;
-  height: 900px;
 }
 .listProduct .item {
   background-color: #eeeee6;
   padding: 20px;
   border-radius: 20px;
+  text-align: center;
 }
 .listProduct .item h2 {
   font-weight: 500;
   font-size: large;
+  text-align: center;
 }
 .listProduct .item .price {
   letter-spacing: 7px;
   font-size: small;
+  text-align: center;
 }
 .listProduct .item button {
   background-color: #353432;
@@ -246,6 +277,7 @@ svg {
   padding: 5px 10px;
   margin-top: 10px;
   border-radius: 20px;
+  text-align: center;
 }
 
 /* cart */
