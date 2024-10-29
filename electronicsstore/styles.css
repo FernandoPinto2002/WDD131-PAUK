@@ -38,7 +38,63 @@ a {
   height: 30px;
   color: #ead8b1; 
 }
+.why-us {
+  grid-column: 1/11;
+  justify-content: center;
+  justify-items: center;
+}
 
+.background-image2 {
+  background-color: #001f3f; 
+  grid-column: 3 / 9;
+  grid-row: 9 / 14;
+  width: 100%;
+  padding: 40px;
+  display: grid;
+  grid-template-rows: auto auto auto; 
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  border: 1.5px solid #001f3f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.top-div {
+  grid-row: 1 / 2; 
+  color: #ead8b1; 
+  text-align: center;
+  padding: 20px;
+}
+
+.middle-content {
+  grid-row: 2 / 3; 
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+.why-image {
+  width: 100%;
+  max-width: 400px; 
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.middle-text {
+  color: #ead8b1;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+/* Bottom text block */
+.bottom-div {
+  grid-row: 3 / 4; /* Third row */
+  color: #ead8b1; /* White text */
+  text-align: center;
+  padding: 20px;
+}
 .icon-cart span {
   position: absolute;
   top: -10px;
@@ -67,10 +123,12 @@ main {
 .hero-img {
   grid-column: 1 / 11;
   grid-row: 1 / 2;
+  
 }
 
 .hero-img img {
   width: 100%;
+  object-fit: cover;
 }
 
 .about-us {
@@ -117,6 +175,7 @@ main {
   width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: #001f3f;
+  grid-column: span 1;
 }
 
 h2 {
