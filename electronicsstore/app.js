@@ -22,7 +22,7 @@ const addDataToHTML = () => {
       let newProduct = document.createElement("div");
       newProduct.dataset.id = product.id;
       newProduct.classList.add("item");
-      newProduct.innerHTML = `<img src="${product.image}" alt="">
+      newProduct.innerHTML = `<img src="${product.image}" alt="${product.alt}">
                 <h2>${product.name}</h2>
                 <div class="price">$${product.price}</div><br>
                 <button class="addCart">Add To Cart</button>`;
@@ -80,7 +80,7 @@ const addCartToHTML = () => {
       listCartHTML.appendChild(newItem);
       newItem.innerHTML = `
             <div class="image">
-                    <img src="${info.image}">
+                    <img src="${info.image}" alt="${info.alt}>
                 </div>
                 <div class="name">
                 ${info.name}

@@ -3,48 +3,57 @@
     "id": 1,
     "name": " TechMaster Wireless Earbuds",
     "price": 200,
-    "image": "Images/img1.webp"
+    "image": "Images/img1.webp",
+    "alt": "Product"
+  
   },
   {
     "id": 2,
     "name": " Recovered IPhone 14 - 258GB",
     "price": 250,
-    "image": "Images/image1.jfif"
+    "image": "Images/image1.jfif",
+    "alt": "Product"
   },
   {
     "id": 3,
     "name": " Gaming Multi-Functional Keyboard",
     "price": 290,
-    "image": "Images/image2.jfif"
+    "image": "Images/image2.jfif",
+    "alt": "Product"
   },
   {
     "id": 4,
     "name": " Speaker BEAT 45FJ 500HZ NEON",
     "price": 500,
-    "image": "Images/image3.jfif"
+    "image": "Images/image3.jfif",
+    "alt": "Product"
   },
   {
     "id": 5,
     "name": " Gaming PC with NVIDIA XST",
     "price": 300,
-    "image": "Images/image4.jfif"
+    "image": "Images/image4.jfif",
+    "alt": "Product"
   },
   {
     "id": 6,
-    "name": " Vitange Camera 1998",
+    "name": " Vitange Camera 1998 - Limited edition",
     "price": 300,
-    "image": "Images/image5.jfif"
+    "image": "Images/image5.jfif",
+    "alt": "Product"
   },
   {
     "id": 7,
     "name": " Electronic Frequency 2255",
     "price": 900,
-    "image": "Images/img7.webp"
+    "image": "Images/img7.webp",
+    "alt": "Product"
   },
   {
     "id": 8,
-    "name": " Retronic CS 458",
+    "name": " Retronic CS 458 - Recovered",
     "price": 100,
-    "image": "Images/image6.jfif"
+    "image": "Images/image6.jfif",
+    "alt": "Product"
   }
 ]

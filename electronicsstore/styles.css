@@ -248,7 +248,8 @@ p {
 }
 
 .listProduct .item img {
-  width: 90%;
+  width: 150px;
+  height: 150px;
   filter: drop-shadow(0 5px 5px #0009);
   margin-bottom: 50px;
 }
